@@ -12,19 +12,9 @@ header {
     align-items: center;
 }
 
-.item{
+.mole{
     height: 100px;
     flex-grow: 1;
-}
-
-.mole {
-    height: 80%;
-    width: 90%;
-}
-
-#mole1 {
-    height: 80%;
-    width: 90%;
 }
 
 .mole-appear {
