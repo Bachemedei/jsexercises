@@ -1,0 +1,32 @@
+*{
+    border:1px solid black;
+}
+
+header {
+    text-align: center;
+}
+
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item{
+    height: 100px;
+    flex-grow: 1;
+}
+
+.mole {
+    height: 80%;
+    width: 90%;
+}
+
+#mole1 {
+    height: 80%;
+    width: 90%;
+}
+
+.mole-appear {
+    background-color: black;
+}
