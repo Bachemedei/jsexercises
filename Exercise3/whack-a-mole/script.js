@@ -1,5 +1,6 @@
-var button = false;
+var gameActive = false;
 var score = 0
+var currentScore;
 var mole;
 var isMole = false
 
@@ -11,10 +12,20 @@ window.onload = () => {
 }
 
 function toggleButton() {
-  if (button === false) {
+  if (gameActive === false) {
+    currentScore = "Score: " + 0
+    document.getElementById("current-score").innerText = currentScore
     moleStart();
   }
-  button = !button;
+  gameActive = !gameActive;
+  if (gameActive) {
+    console.log("game started")
+    document.getElementById("btn").value = "Stop!"
+  }
+  else {
+    console.log("game ended")
+    document.getElementById("btn").value = "Start!"
+  }
 }
 
 function moleDisappear(mole) {
@@ -32,7 +43,7 @@ function moleAppear() {
   var time = Math.round(Math.random() * 700) + 400;
   setTimeout(() => {
     moleDisappear(mole);
-    if (button === true) {
+    if (gameActive === true) {
       moleStart();
     }
   }, time);
@@ -51,4 +62,6 @@ function changeScore(e){
   }
   currentScore = "Score: " + score
   document.getElementById("current-score").innerText = currentScore
+  if (!gameActive) {
+  }
 }
