@@ -1,6 +1,5 @@
 var gameActive = false;
 var score = 0
-var currentScore;
 var mole;
 var isMole = false
 
@@ -11,20 +10,27 @@ window.onload = () => {
   })
 }
 
+function highScore(){
+  var highScoreText = document.getElementById("high-score").innerText
+  if (score > highScoreText) {
+    document.getElementById("high-score").innerText = score
+  }
+}
+
 function toggleButton() {
   if (gameActive === false) {
-    currentScore = "Score: " + 0
-    document.getElementById("current-score").innerText = currentScore
+    score = 0
+    document.getElementById("current-score").innerText = score
     moleStart();
   }
   gameActive = !gameActive;
   if (gameActive) {
-    console.log("game started")
     document.getElementById("btn").value = "Stop!"
   }
   else {
-    console.log("game ended")
     document.getElementById("btn").value = "Start!"
+      console.log("scoring")
+      highScore()
   }
 }
 
@@ -60,8 +66,6 @@ function changeScore(e){
   if (moleClicked === moleActive && isMole === true) {
     score++
   }
-  currentScore = "Score: " + score
-  document.getElementById("current-score").innerText = currentScore
-  if (!gameActive) {
-  }
+  document.getElementById("current-score").innerText = score
 }
+

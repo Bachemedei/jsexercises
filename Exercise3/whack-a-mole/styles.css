@@ -37,6 +37,7 @@ header {
     font-size: large;
 }
 
-#current-score {
-    text-align: center;
+.scores {
+    display: flex;
+    justify-content: center;
 }
