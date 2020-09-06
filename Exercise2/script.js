@@ -16,7 +16,6 @@ function selectItem(e){
     var button = e.currentTarget
     var paragraph = button.parentElement.children[0]
     var item = paragraph.innerText
-    console.log(item)
     addToCart(item)
 }
 
