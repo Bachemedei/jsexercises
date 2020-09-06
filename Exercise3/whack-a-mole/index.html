@@ -9,13 +9,26 @@
     </head>
 
     <body>
-        <header>Whack A Mole</header>
+        <header><h1>Whack A Mole</h1></header>
         <div id=container>
-                <div class="mole"></div>
-                <div class="mole"></div>
-                <div class="mole"></div>
-                <div class="mole"></div>
-        <input type="button" onclick="moleStart()" value="Mole">
+                <div class="mole">
+                    <img class="mole-img" src=https://www.netclipart.com/pp/m/122-1229323_ground-looking-animal-claws-blind-mole-transparent.png>
+                    1</div>
+                <div class="mole">
+                    <img class="mole-img" src=https://www.netclipart.com/pp/m/122-1229323_ground-looking-animal-claws-blind-mole-transparent.png>
+                    2</div>
+                <div class="mole">
+                    <img class="mole-img" src=https://www.netclipart.com/pp/m/122-1229323_ground-looking-animal-claws-blind-mole-transparent.png>
+                    3</div>
+                <div class="mole">
+                    <img class="mole-img" src=https://www.netclipart.com/pp/m/122-1229323_ground-looking-animal-claws-blind-mole-transparent.png>
+                    4</div>
+        </div>
+        <div id="btn-container">
+            <input id="btn" type="button" onclick="toggleButton()" value="Start!">
+        </div>
+        <div>
+            <h2 id="current-score">Score: 0</h2>
         </div>
         <script src="script.js"></script>
     </body>
