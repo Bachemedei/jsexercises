@@ -26,7 +26,7 @@ function moleAppear() {
   isMole = true
   var index = Math.round(Math.random() * 3);
   mole = document.getElementsByClassName("mole")[index];
-  mole.classList.toggle("visible");
+  mole.classList.toggle("mole-visible");
 
   
   var time = Math.round(Math.random() * 700) + 400;
