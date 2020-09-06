@@ -18,7 +18,7 @@ function toggleButton() {
 }
 
 function moleDisappear(mole) {
-  mole.classList.toggle("mole-visible");
+  mole.classList.toggle("visible");
   isMole = false
 }
 
@@ -26,7 +26,7 @@ function moleAppear() {
   isMole = true
   var index = Math.round(Math.random() * 3);
   mole = document.getElementsByClassName("mole")[index];
-  mole.classList.toggle("mole-visible");
+  mole.classList.toggle("visible");
 
   
   var time = Math.round(Math.random() * 700) + 400;
