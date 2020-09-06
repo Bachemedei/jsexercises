@@ -13,10 +13,19 @@ header {
 }
 
 .mole{
-    height: 100px;
     flex-grow: 1;
+    opacity: 0.0;
 }
 
 .mole-appear {
     background-color: black;
+}
+
+.mole-img {
+    /* opacity: 0.0; */
+    width: 100%;
+}
+
+.visible {
+    opacity: 1.0;
 }
