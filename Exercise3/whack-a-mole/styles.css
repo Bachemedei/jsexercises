@@ -15,8 +15,8 @@ header {
     color: white;
 }
 
-.mole-visible {
-    background-color: black;
+.mole.visible {
+    cursor: pointer;
 }
 
 .mole-img {
