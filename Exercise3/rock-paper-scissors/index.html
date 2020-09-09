@@ -9,21 +9,27 @@
     </head>
 
     <body>
-        <header>Rock Paper Scissors</header>
+        <header><h2>Rock Paper Scissors</h2></header>
+        <div id="titles">
+            <h2>You</h2>
+            <h2>Computer</h2>
+        </div>
         <div id="game">
             <div class="box" id="user">
-                <div class="choice" id="user-choice"></div>
-                <div id="btns">
-                    <button>Rock!</button>
-                    <button>Paper!</button>
-                    <button>Scissors!</button>
-                </div>
+                <img id="user-img" src="">
+                <p class="choice" id="user-choice"></p>
             </div>
             <div class ="box" id="computer">
-                <div class="choice" id="computer-choice"></div>
+                <img id="computer-img" src="">
+                <p class="choice" id="computer-choice"></p>
             </div>
         </div>
-        <p id="winner"></p>
+        <div id="btns">
+            <button>Rock!</button>
+            <button>Paper!</button>
+            <button>Scissors!</button>
+        </div>
+        <h2 id="winner"></h2>
         <script src="script.js"></script>
     </body>
 </html>
