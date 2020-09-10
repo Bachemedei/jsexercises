@@ -31,8 +31,13 @@ var fruit;
         snake.checkCollision();
 
         //Update score
-        var score = "Current Score: " + snake.total
-        document.getElementById("score").innerText = score
+        document.getElementById("current-score").innerText = snake.total
+        var highScoreText = document.getElementById("high-score").innerText
+        
+        if (snake.total > highScoreText) {
+            console.log("if loop")
+            document.getElementById("high-score").innerText = snake.total
+        }
     }, 250);
 }());
 

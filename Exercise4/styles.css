@@ -1,3 +1,7 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -6,4 +10,13 @@
 
 #canvas {
     background-color: #3e3e3e;
+}
+
+#scores div {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    padding-left: 5px
 }
