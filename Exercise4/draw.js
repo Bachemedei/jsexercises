@@ -38,7 +38,7 @@ var fruit;
             console.log("if loop")
             document.getElementById("high-score").innerText = snake.total
         }
-    }, 250);
+    }, 200);
 }());
 
 // Determine which key was pressed so snake changes direction

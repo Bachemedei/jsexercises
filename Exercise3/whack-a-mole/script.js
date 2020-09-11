@@ -57,7 +57,7 @@ function moleAppear() {
     // After time, make mole disappear
     moleDisappear(mole);
     // Loops game if less than 50 moles have appeared
-    if (gameActive === true && counter < 5) {
+    if (gameActive === true && counter < 50) {
       counter ++
       moleStart();
       console.log(counter)
