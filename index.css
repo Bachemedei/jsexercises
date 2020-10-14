@@ -7,10 +7,9 @@ html {
 
 header {
   display: inline-block;
-  border-bottom: 0.3vw solid black;
   font-size: calc(40px + 1vw);
   margin-top: 4vw;
-  margin-bottom: 4vw;
+  margin-bottom: 8vw;
 }
 
 h1,
@@ -32,42 +31,15 @@ a header:visited {
   color: black;
 }
 
-#titles {
+.games {
   display: flex;
-  justify-content: space-around;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-#game {
-  display: flex;
-  height: 400px;
-}
-
-.box {
-  border: 1px solid black;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
-  width: 50%;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 1px;
+  margin: 1vw;
 }
 
-.choice {
-  font-size: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#btns {
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 30px;
+.btn-link {
+  width: calc(200px + 5vw);
+  /* height: calc(70px + 5vw); */
 }
 
 .btn {
@@ -90,10 +62,5 @@ a header:visited {
 }
 
 .btn:hover {
-  color: #000000;
-  background-color: lightgray;
-}
-
-img {
-  width: 250px;
+  background-color: #d4a405;
 }

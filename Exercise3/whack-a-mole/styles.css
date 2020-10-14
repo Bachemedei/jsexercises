@@ -1,47 +1,73 @@
-*{
-    font-family: 'Roboto', sans-serif;
+html {
+  font-family: "Roboto", sans-serif;
+  padding: 3vw 13vw;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 
 header {
-    text-align: center;
+  display: inline-block;
+  border-bottom: 0.3vw solid black;
+  font-size: calc(40px + 1vw);
+  margin-top: 4vw;
+  margin-bottom: 4vw;
 }
 
-#container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+h1,
+h2 {
+  text-align: center;
 }
 
-.mole{
-    flex-grow: 1;
-    opacity: 0.0;
-    height: 250px;
-    color: white;
+a header {
+  color: black;
+  border-bottom: 0.3vw solid black;
+}
+
+a header:hover {
+  color: #d4a405;
+  border-bottom: 0.3vw solid #d4a405;
+}
+
+a header:visited {
+  color: black;
+}
+
+#container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.mole {
+  flex-grow: 1;
+  opacity: 0;
+  height: 250px;
+  color: white;
 }
 
 .mole.visible {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .mole-img {
-    /* opacity: 0.0; */
-    width: 100%;
+  /* opacity: 0.0; */
+  width: 100%;
 }
 
 .visible {
-    opacity: 1.0;
+  opacity: 1;
 }
 
-#btn-container{
-    display: flex;
-    justify-content: center;
+#btn-container {
+  display: flex;
+  justify-content: center;
 }
 
-#btn{
-    font-size: large;
+#btn {
+  font-size: large;
 }
 
 .scores {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
