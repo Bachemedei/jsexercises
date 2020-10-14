@@ -17,18 +17,25 @@ h2 {
   text-align: center;
 }
 
-a header {
+a {
+  text-decoration: none;
+}
+
+.link {
   color: black;
+}
+
+.link:hover {
+  color: #d4a405;
+}
+
+#main-link {
   border-bottom: 0.3vw solid black;
 }
 
-a header:hover {
-  color: #d4a405;
+#main-link:hover {
   border-bottom: 0.3vw solid #d4a405;
-}
-
-a header:visited {
-  color: black;
+  color: #d4a405;
 }
 
 .games {
